@@ -81,31 +81,34 @@ I love building creative digital projects and websites.
 
 <div class="gallery-container">
 
-<!-- CARD 1 -->
 <div class="thumbnail-card">
-<img src="images/thumb1.png.png" alt="travel and vlog">
+<img src="images/thumb1.png.png" onclick="openPopup(this.src)">
 <h3>Gaming YouTube Thumbnail</h3>
-<p>Thumbnail design created for gaming content.</p>
+<p>Thumbnail design for gaming content.</p>
 </div>
 
-<!-- CARD 2 -->
 <div class="thumbnail-card">
-<img src="images/thumb2.png.png" alt="horror sttory and movies">
-<h3>Tech Video Thumbnail</h3>
-<p>Modern YouTube thumbnail for tech channel.</p>
+<img src="images/thumb2.png.png" onclick="openPopup(this.src)">
+<h3>Tech Channel Thumbnail</h3>
+<p>Clean tech themed thumbnail.</p>
 </div>
 
-<!-- CARD 3 -->
 <div class="thumbnail-card">
-<img src="images/thumb3.png.png" alt="Content Thumbnail">
+<img src="images/thumb3.png.png" onclick="openPopup(this.src)">
 <h3>Content Creator Thumbnail</h3>
-<p>Thumbnail created for social media content.</p>
+<p>Modern social media thumbnail.</p>
 </div>
 
 </div>
 
 </section>
 
+
+<!-- IMAGE POPUP -->
+<div id="imagePopup" class="popup">
+<span class="close" onclick="closePopup()">×</span>
+<img id="popupImg">
+</div>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
