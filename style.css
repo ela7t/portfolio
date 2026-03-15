@@ -185,3 +185,40 @@ gap:15px;
 }
 
 }
+/* THUMBNAIL CARDS */
+
+.gallery-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:20px;
+}
+
+.thumbnail-card{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+padding:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.thumbnail-card img{
+width:100%;
+border-radius:8px;
+}
+
+.thumbnail-card h3{
+margin-top:10px;
+font-size:18px;
+}
+
+.thumbnail-card p{
+font-size:14px;
+color:#666;
+margin-top:5px;
+}
+
+.thumbnail-card:hover{
+transform:translateY(-5px);
+}
