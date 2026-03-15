@@ -197,26 +197,23 @@ margin-top:20px;
 .thumbnail-card{
 background:white;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 padding:15px;
 text-align:center;
-transition:0.3s;
+transition:all 0.3s ease;
+}
+
+.thumbnail-card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 .thumbnail-card img{
-width:100%;
-border-radius:8px;
+transition:0.3s;
 }
 
-.thumbnail-card h3{
-margin-top:10px;
-font-size:18px;
-}
-
-.thumbnail-card p{
-font-size:14px;
-color:#666;
-margin-top:5px;
+.thumbnail-card img:hover{
+transform:scale(1.05);
 }
 
 .thumbnail-card:hover{
