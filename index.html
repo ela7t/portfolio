@@ -9,122 +9,116 @@
 
 <body>
 
+<!-- HEADER -->
 <header>
 <nav>
-<h1 class="logo">Elyas</h1>
+<h2 class="logo">Elyas</h2>
 
-<div class="menu">
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#creative">Creative</a>
-<a href="#contact">Contact</a>
-</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#gallery">Thumbnails</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
 </nav>
 </header>
 
-<section class="hero">
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
 
 <div class="hero-text">
-<h2>Hello, I'm Elyas</h2>
-<p>Web Developer | Video Editor | Content Creator</p>
-
-<p>
-I build websites and create digital content like videos,
-YouTube thumbnails and graphics.
-</p>
-
-<a class="btn" href="#projects">View My Work</a>
-
+<h1>Hello, I'm <span>Elyas</span></h1>
+<p>Content Creator • Video Editor • Developer</p>
 </div>
 
 <div class="hero-image">
-<img src="images/profile.jpg" alt="Elyas profile">
+<img src="images/profile.png.jpg" alt="Elyas profile" class="profile-pic">
 </div>
 
 </section>
 
-<section id="about">
+
+<!-- ABOUT -->
+<section id="about" class="about">
 
 <h2>About Me</h2>
 
 <p>
-I'm Elyas, a passionate learner in web development and digital media.
-I enjoy building websites and also creating content like video editing
-and YouTube thumbnails.
+I am Elyas, a passionate content creator and developer.
+I enjoy video editing, graphic design, and programming.
+I love building creative digital projects and websites.
 </p>
 
 </section>
 
-<section id="skills">
 
-<h2>Skills</h2>
+<!-- SKILLS -->
+<section id="skills" class="skills">
 
-<h3>Web Development</h3>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript (Learning)</li>
-<li>Git & GitHub</li>
-</ul>
+<h2>My Skills</h2>
 
-<h3>Creative Skills</h3>
-<ul>
-<li>Video Editing</li>
-<li>Content Creation</li>
-<li>YouTube Thumbnail Design</li>
-<li>Graphic Design</li>
-</ul>
+<div class="skills-container">
 
-</section>
+<div class="skill">Video Editing</div>
+<div class="skill">Graphic Design</div>
+<div class="skill">Content Creation</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
 
-<section id="projects">
-
-<h2>Web Projects</h2>
-
-<div class="project">
-<h3>Personal Portfolio</h3>
-<p>This portfolio website built using HTML and CSS.</p>
-</div>
-
-<div class="project">
-<h3>More Projects Coming</h3>
-<p>I will add more projects as I learn web development.</p>
 </div>
 
 </section>
 
-<section id="creative">
 
-<h2>Creative Work</h2>
+<!-- THUMBNAIL GALLERY -->
+<section id="gallery" class="gallery">
 
-<div class="project">
-<h3>Video Editing</h3>
-<p>Editing videos for social media and online content.</p>
-</div>
+<h2>My Thumbnail Designs</h2>
 
-<div class="project">
-<h3>Thumbnail Design</h3>
-<p>Designing attractive YouTube thumbnails.</p>
+<div class="gallery-container">
+
+<img src="images/thumb1.png.png" alt="Thumbnail 1">
+
+<img src="images/thumb2.png.png" alt="Thumbnail 2">
+
+<img src="images/thumb3.png.png" alt="Thumbnail 3">
+
+
+
 </div>
 
 </section>
 
-<section id="contact">
 
-<h2>Contact</h2>
+<!-- CONTACT -->
+<section id="contact" class="contact">
 
-<p>Email: elyasteshome158@gmail.com</p>
-<p>GitHub: https://github.com/ela7t</p>
+<h2>Contact Me</h2>
+
+<form id="contact-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
 
 </section>
+
 
 <footer>
-
-<p>© 2026 Elyas Portfolio</p>
-
+<p>© 2026 Elyas | Portfolio</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
