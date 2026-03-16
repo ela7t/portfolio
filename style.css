@@ -8,6 +8,7 @@ font-family: Arial, sans-serif;
 }
 
 body{
+padding-top:80px;
 background:#f4f4f4;
 color:#333;
 line-height:1.6;
@@ -16,10 +17,15 @@ line-height:1.6;
 
 /* NAVBAR */
 
+/* FIXED NAVBAR */
+
 header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
 background:#222;
-color:white;
-padding:15px 40px;
+z-index:1000;
 }
 
 nav{
