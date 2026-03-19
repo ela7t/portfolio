@@ -210,3 +210,16 @@ background:#1a1a1a;
 .dark .thumbnail-card{
 background:#222;
 }
+.project-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+margin-top:20px;
+}
+
+.project-card a{
+color:#00adb5;
+text-decoration:none;
+font-weight:bold;
+}
