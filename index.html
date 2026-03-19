@@ -9,7 +9,6 @@
 
 <body>
 
-<!-- HEADER -->
 <header>
 <nav>
 <h2 class="logo">Elyas</h2>
@@ -21,12 +20,11 @@
 <li><a href="#gallery">Thumbnails</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
-
 </nav>
 </header>
 
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section id="home" class="hero">
 
 <div class="hero-text">
@@ -35,68 +33,76 @@
 </div>
 
 <div class="hero-image">
-<img src="images/profile.png.png" alt="Elyas profile" class="profile-pic">
+<img src="images/profile.png.png" class="profile-pic">
 </div>
 
 </section>
 
 
 <!-- ABOUT -->
-<section id="about" class="about">
-
+<section id="about">
 <h2>About Me</h2>
-
 <p>
 I am Elyas, a passionate content creator and developer.
 I enjoy video editing, graphic design, and programming.
 I love building creative digital projects and websites.
 </p>
-
 </section>
 
 
 <!-- SKILLS -->
-<section id="skills" class="skills">
-
+<section id="skills">
 <h2>My Skills</h2>
 
 <div class="skills-container">
-
-<div class="skill">Video Editing</div>
-<div class="skill">Graphic Design</div>
+<div class="skill">Video Editing (Premiere Pro)</div>
+<div class="skill">Graphic Design (Photoshop)</div>
 <div class="skill">Content Creation</div>
 <div class="skill">HTML</div>
 <div class="skill">CSS</div>
 <div class="skill">JavaScript</div>
-
 </div>
 
 </section>
 
 
-<!-- THUMBNAIL GALLERY -->
-<section id="gallery" class="gallery">
-
+<!-- GALLERY -->
+<section id="gallery">
 <h2>My Thumbnail Designs</h2>
 
 <div class="gallery-container">
 
 <div class="thumbnail-card">
 <img src="images/thumb1.png.png" onclick="openPopup(this.src)">
-<h3>Gaming YouTube Thumbnail</h3>
-<p>Thumbnail design for gaming content.</p>
+<h3>Gaming Thumbnail</h3>
+<p>High CTR gaming design</p>
+
+<div class="tags">
+<span>Photoshop</span>
+<span>YouTube</span>
+</div>
 </div>
 
 <div class="thumbnail-card">
 <img src="images/thumb2.png.png" onclick="openPopup(this.src)">
-<h3>Tech Channel Thumbnail</h3>
-<p>Clean tech themed thumbnail.</p>
+<h3>Tech Thumbnail</h3>
+<p>Clean modern tech design</p>
+
+<div class="tags">
+<span>Canva</span>
+<span>Design</span>
+</div>
 </div>
 
 <div class="thumbnail-card">
 <img src="images/thumb3.png.png" onclick="openPopup(this.src)">
-<h3>Content Creator Thumbnail</h3>
-<p>Modern social media thumbnail.</p>
+<h3>Content Creator</h3>
+<p>Social media thumbnail</p>
+
+<div class="tags">
+<span>Branding</span>
+<span>Content</span>
+</div>
 </div>
 
 </div>
@@ -104,34 +110,29 @@ I love building creative digital projects and websites.
 </section>
 
 
-<!-- IMAGE POPUP -->
+<!-- POPUP -->
 <div id="imagePopup" class="popup">
 <span class="close" onclick="closePopup()">×</span>
 <img id="popupImg">
 </div>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
 
+<!-- CONTACT -->
+<section id="contact">
 <h2>Contact Me</h2>
 
-<form id="contact-form">
-
+<form>
 <input type="text" placeholder="Your Name" required>
-
 <input type="email" placeholder="Your Email" required>
-
 <textarea placeholder="Your Message"></textarea>
-
 <button type="submit">Send Message</button>
-
 </form>
 
 </section>
 
 
 <footer>
-<p>© 2026 Elyas | Portfolio</p>
+<p>© 2026 Elyas Portfolio</p>
 </footer>
 
 <script src="script.js"></script>
