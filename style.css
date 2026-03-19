@@ -190,3 +190,23 @@ flex-direction:column;
 text-align:center;
 }
 }
+#darkModeBtn{
+background:none;
+border:none;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark section{
+background:#1a1a1a;
+}
+
+.dark .thumbnail-card{
+background:#222;
+}

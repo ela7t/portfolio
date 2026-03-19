@@ -30,3 +30,6 @@ setTimeout(type, isDeleting ? 50 : 100);
 }
 
 type();
+document.getElementById("darkModeBtn").onclick = function(){
+document.body.classList.toggle("dark");
+}
