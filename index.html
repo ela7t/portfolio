@@ -1,192 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elyas Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elyas Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<nav>
-<h2 class="logo">Elyas</h2>
-<button id="darkModeBtn">🌙</button>
+  <nav>
+    <h2 class="logo">Elyas</h2>
+    <button id="darkModeBtn">🌙</button>
 
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#gallery">Thumbnails</a></li>
-<li><a href="#videos">Videos</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#gallery">Thumbnails</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
-
 
 <!-- HERO -->
 <section id="home" class="hero hidden">
-<div class="hero-text">
-<h1>Hello, I'm <span>Elyas</span></h1>
-<p><span id="typing"></span></p>
-</div>
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Elyas</span></h1>
+    <p><span id="typing"></span></p>
+  </div>
 
-<div class="hero-image">
-<img src="images/profile.png" class="profile-pic">
-</div>
+  <div class="hero-image">
+    <img src="images/profile.png" class="profile-pic">
+  </div>
 </section>
-
 
 <!-- ABOUT -->
 <section id="about" class="hidden">
-<h2>About Me</h2>
-<p>
-I am Elyas, a passionate content creator and developer.
-I enjoy video editing, graphic design, and programming.
-I love building creative digital projects and websites.
-</p>
+  <h2>About Me</h2>
+  <p>
+    I am Elyas, a passionate content creator and developer.
+    I enjoy video editing, graphic design, and programming.
+    I love building creative digital projects and websites.
+  </p>
 </section>
-
 
 <!-- SKILLS -->
 <section id="skills" class="hidden">
-<h2>My Skills</h2>
+  <h2>My Skills</h2>
 
-<div class="skills-container">
-<div class="skill">Video Editing (Premiere Pro)</div>
-<div class="skill">Graphic Design (Photoshop)</div>
-<div class="skill">Content Creation</div>
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-</div>
-
+  <div class="skills-container">
+    <div class="skill">Video Editing (Premiere Pro)</div>
+    <div class="skill">Graphic Design (Photoshop)</div>
+    <div class="skill">Content Creation</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+  </div>
 </section>
-
 
 <!-- GALLERY -->
 <section id="gallery" class="hidden">
-<h2>My Thumbnail Designs</h2>
+  <h2>My Thumbnail Designs</h2>
+  <div class="gallery-container">
+    <div class="thumbnail-card">
+      <img src="images/thumb1.png" onclick="openPopup(this.src)">
+      <h3>Gaming Thumbnail</h3>
+      <p>High CTR gaming design</p>
+      <div class="tags">
+        <span>Photoshop</span>
+        <span>YouTube</span>
+      </div>
+    </div>
 
-<div class="gallery-container">
+    <div class="thumbnail-card">
+      <img src="images/thumb2.png" onclick="openPopup(this.src)">
+      <h3>Tech Thumbnail</h3>
+      <p>Clean modern tech design</p>
+      <div class="tags">
+        <span>Canva</span>
+        <span>Design</span>
+      </div>
+    </div>
 
-<div class="thumbnail-card">
-<img src="images/thumb1.png" onclick="openPopup(this.src)">
-<h3>Gaming Thumbnail</h3>
-<p>High CTR gaming design</p>
-<div class="tags">
-<span>Photoshop</span>
-<span>YouTube</span>
-</div>
-</div>
-
-<div class="thumbnail-card">
-<img src="images/thumb2.png" onclick="openPopup(this.src)">
-<h3>Tech Thumbnail</h3>
-<p>Clean modern tech design</p>
-<div class="tags">
-<span>Canva</span>
-<span>Design</span>
-</div>
-</div>
-
-<div class="thumbnail-card">
-<img src="images/thumb3.png" onclick="openPopup(this.src)">
-<h3>Content Creator</h3>
-<p>Social media thumbnail</p>
-<div class="tags">
-<span>Branding</span>
-<span>Content</span>
-</div>
-</div>
-
-</div>
+    <div class="thumbnail-card">
+      <img src="images/thumb3.png" onclick="openPopup(this.src)">
+      <h3>Content Creator</h3>
+      <p>Social media thumbnail</p>
+      <div class="tags">
+        <span>Branding</span>
+        <span>Content</span>
+      </div>
+    </div>
+  </div>
 </section>
-
 
 <!-- VIDEO (FIXED YOUTUBE EMBED) -->
 <section id="videos" class="hidden">
-<h2>My Video Editing Work</h2>
-
-<div class="video-container">
-<iframe 
-src="https://www.youtube.com/embed/wUgMlyPA3G0"
-allowfullscreen>
-</iframe>
-</div>
-
+  <h2>My Video Editing Work</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/wUgMlyPA3G0" allowfullscreen></iframe>
+  </div>
 </section>
-
 
 <!-- SOCIAL -->
 <section id="social" class="hidden">
-<h2>Connect With Me</h2>
-
-<div class="social-links">
-<a href="https://github.com/ela7t" target="_blank">GitHub</a>
-<a href="https://youtube.com/" target="_blank">YouTube</a>
-<a href="#">TikTok</a>
-<a href="#">Instagram</a>
-</div>
-
+  <h2>Connect With Me</h2>
+  <div class="social-links">
+    <a href="https://github.com/ela7t" target="_blank">GitHub</a>
+    <a href="https://youtube.com/" target="_blank">YouTube</a>
+    <a href="#">TikTok</a>
+    <a href="#">Instagram</a>
+  </div>
 </section>
-
 
 <!-- PROJECT -->
 <section id="projects" class="hidden">
-<h2>My Projects</h2>
-
-<div class="project-card">
-<h3>Portfolio Website</h3>
-<p>This portfolio built using HTML, CSS and JavaScript.</p>
-<a href="https://ela7t.github.io/portfolio" target="_blank">View Live</a>
-</div>
-
+  <h2>My Projects</h2>
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>This portfolio built using HTML, CSS and JavaScript.</p>
+    <a href="https://ela7t.github.io/portfolio" target="_blank">View Live</a>
+  </div>
 </section>
-
 
 <!-- HIRE -->
 <section id="hire" class="hidden">
-<h2>Hire Me</h2>
+  <h2>Hire Me</h2>
+  <p>I’m available for freelance work:</p>
+  <ul class="hire-list">
+    <li>✔ Video Editing</li>
+    <li>✔ Thumbnail Design</li>
+    <li>✔ Web Development</li>
+  </ul>
 
-<p>I’m available for freelance work:</p>
-
-<ul class="hire-list">
-<li>✔ Video Editing</li>
-<li>✔ Thumbnail Design</li>
-<li>✔ Web Development</li>
-</ul>
-
-<a href="#contact" class="hire-btn">Contact Me</a>
-
+  <a href="#contact" class="hire-btn">Contact Me</a>
 </section>
-
 
 <!-- CONTACT -->
 <section id="contact" class="hidden">
-<h2>Contact Me</h2>
-
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Your Message"></textarea>
-<button type="submit">Send Message 🚀</button>
-</form>
-
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message 🚀</button>
+  </form>
 </section>
-
 
 <!-- POPUP -->
 <div id="imagePopup" class="popup">
-<span class="close" onclick="closePopup()">×</span>
-<img id="popupImg">
+  <span class="close" onclick="closePopup()">×</span>
+  <img id="popupImg">
 </div>
 
-
 <footer>
-<p>© 2026 Elyas Portfolio</p>
+  <p>© 2026 Elyas Portfolio</p>
 </footer>
 
 <script src="script.js"></script>
